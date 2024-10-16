@@ -2,7 +2,7 @@
 
 本文档介绍适用于 [Ballance Mod Loader (简称 BML)](https://github.com/Gamepiaynmo/BallanceModLoader) 或 [Ballance Mod Loader Plus (简称 BML+ 或 BMLP)](https://github.com/doyaGu/BallanceModLoaderPlus) 的 Mod，因此你需要先安装其一才能使用。
 
-本文档撰写于 2024 年 10 月 9 日。
+本文档撰写于 2024 年 10 月 7 日至 10 月 15 日。
 
 ## Mod 获取方式
 
@@ -13,6 +13,7 @@
 ### 其他下载方式
 
 - 有些 Mod 因为需要时常更新，或者内容不太适合正常发布，地图下载站不会收录。请参见 Mod 具体介绍内列出的下载方式。
+- 很多 Mod 也可以从各常用 Ballance 交流群的群文件内下载。
 - 有能力者自然可以直接从 Mod 源码自行编译。
 
 ## Mod 列表
@@ -149,7 +150,7 @@ Ballance 高清修复，为一些老旧地图添加阴影，渐变柱子等。�
 
 ### BallanceMMO
 
-全称 Ballance 大型多人在线（Ballance Massively Multiplayer Online）。**简称 BMMO**，俗称**联机插件**。Ballance 多人联机使用的 Mod。
+Ballance **多人联机**使用的 Mod。全称 Ballance 大型多人在线（Ballance Massively Multiplayer Online）。**简称 BMMO**，俗称**联机插件**。
 
 完整简介请参照 Ballance Wiki：
 
@@ -303,11 +304,6 @@ BLinguist和旧版中文补丁一致，汉化了教程和多数界面菜单。�
 
 ### ExtraSector
 
-999 小节加载器，使得游戏可以加载超过 8 小节的地图。主要用于游玩原版连体图等。
-
-
-### ExtraSector
-
 #### 基础信息
 
 由于Ballance原版脚本限制，地图最多被限制为8小节。使用Mod可解除此限制，赋予Ballance加载大于8小节关卡的能力。也就可以加载你们经常玩的1-12或1-13连体关卡了。
@@ -335,7 +331,7 @@ BLinguist和旧版中文补丁一致，汉化了教程和多数界面菜单。�
 
 #### 配置选项
 
-*待施工...*
+*见游戏内设置选项。*
 
 ### FontCraft
 
@@ -365,3 +361,112 @@ BLinguist和旧版中文补丁一致，汉化了教程和多数界面菜单。�
   * FontBold - 开启后字体将显示为粗体。重启游戏生效。
   * FontUnderLine - 开启后字体将被加上下划线。重启游戏生效。
   * FontColor - 字体颜色，重启游戏生效。支持的颜色有两种：第一种格式是`RRR,GGG,BBB,AAA`格式，其中`RRR,GGG,BBB`是颜色的红绿蓝分量，`AAA`（透明度）部分是可选的，例如`0,0,0`是黑色，`0,0,0,127`是半透明黑色；第二种格式是`#rrggbbaa`（类似于HTML颜色代码，不区分大小写），每一个颜色分量由2位十六进制数字表示，其中透明度分量也是可选的，例如`#000000`是纯黑色，`#1e90ff`是天蓝色，而`#0000007f`则是半透明黑色。
+
+### FramerateUnlocker
+
+游戏帧率解锁工具。可以自定义是否启用垂直同步，是否解锁或手动设置游戏帧率上限。
+
+- 作者：Swung0x48
+- 发布时间：2021 年 1 月
+
+#### 下载地址
+
+- [地图下载站](#ballance-地图下载站)
+- [GitHub](https://github.com/Swung0x48/FramerateUnlocker)
+
+#### 配置选项
+
+*见游戏内设置选项。*
+
+### FreeViewRotation
+
+自由视角 Mod。使用后游戏内摄像机的视角（以及玩家球运动方向）会变成由鼠标而不是视角转向热键操控。
+
+- 作者：BallanceBug
+- 发布时间：2022 年 12 月
+
+#### 下载地址
+
+- [地图下载站](#ballance-地图下载站)
+- [GitHub](https://github.com/Xenapte/MyBMLMods)
+
+#### 配置选项
+
+- Main
+  * Enabled - 是否启用。
+  * ShowCursor - 是否显示鼠标指针。Ballance 游戏内正常会自动禁用鼠标指针，但自由视角 Mod 使用鼠标控制视角，若启用可能对操控有所帮助。
+  * Sensitivity - 鼠标灵敏度，越高越灵敏。
+
+### Interference
+
+影子球干扰 Mod。可以用来训练玩家联机时的抗干扰能力。
+
+- 作者：Ghomist (Zzq_203)
+- 发布时间：2022 年
+
+#### 配置选项
+
+*见游戏内设置选项。*
+
+### KeystrokeViewer
+
+游戏内按键显示 Mod。比外接按键显示工具稍微容易安装配置一点，但功能也更简陋。
+
+- 作者：BallanceBug
+- 发布时间：2023 年 10 月
+
+#### 下载地址
+
+- [地图下载站](#ballance-地图下载站)
+- [GitHub](https://github.com/Xenapte/MyBMLMods)
+
+#### 配置选项
+
+- Main
+  * X_Position - 按键显示区域最左端的 X 座标相对于整个窗口宽度的比例。用于调节按键显示的位置。
+  * X_Width - 按键显示区域最大宽度。
+  * Y_Position - 按键显示区域最上端的 Y 座标相对于整个窗口高度的比例。用于调节按键显示的位置。
+  * Font_Size - 按键显示的字号（大小）。
+  * All_Keys_Mode - 是否显示所有按下的按键。默认模式下本 Mod 只会显示游戏内最常用的按键。
+- Keys
+  * *按键的键位设置。本 Mod 默认情况下无法读取玩家的键位设置，因此若有非标准键位必须手动设置。*
+
+### LanternFader
+
+用于改善玩家在灯柱附近时的性能，增加游戏帧率。
+
+本 Mod 无需配置。
+
+- 作者：doyaGu
+- 发布时间：2023 年 2 月
+
+#### 下载地址
+
+- [地图下载站](#ballance-地图下载站)
+
+### NewSpawn
+
+新的自定义出生点 Mod（功能类似于 BML 内建的 `/spawn` 命令）。支持重置至不同小节，或同小节不重置机关及影子球录制，方便竞速练习。
+
+#### 下载地址
+
+- [地图下载站](#ballance-地图下载站)
+- [GitHub](https://github.com/fluorescia/BallanceNewSpawn)
+
+#### 配置选项
+
+*见游戏内设置选项。*
+
+### PhysicsEditor
+
+游戏物理参数编辑器。可以调整重力、游戏速度等。
+
+注意事项：本 Mod 无法保证启用之后所有时刻均保持设定的物理参数不变。例如，玩家离开暂停菜单继续游戏时，游戏可能会有短暂恢复一帧正常游戏重力、速度设定。
+
+- 作者：BallanceBug
+- 发布时间：2023 年 10 月
+
+#### 下载地址
+
+- [地图下载站](#ballance-地图下载站)
+- [GitHub](https://github.com/Xenapte/MyBMLMods)
