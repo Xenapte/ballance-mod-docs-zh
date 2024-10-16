@@ -16,7 +16,7 @@
 - 很多 Mod 也可以从各常用 Ballance 交流群的群文件内下载。
 - 有能力者自然可以直接从 Mod 源码自行编译。
 
-## Mod 列表
+## Mod 详解
 
 ### AdvancedTravelCam
 
