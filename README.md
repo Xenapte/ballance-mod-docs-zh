@@ -76,6 +76,22 @@ Ballance Mod Loader（BML）的设置。游戏内 BML 以内建 Mod 的形式出
 - Misc - 杂项选项。
   * SkipLoadingAnim - 跳过游戏开始时的加载界面（Logo 动画等）。
   * FullScreen - 切换全屏模式的快捷键。
+  * UnlockResolution - 解锁窗口比例限制。默认 Ballance 仅允许 4:3 的分辨率，启用本选项后可以使用显示器支持的 16:9 等分辨率。
+  * Overclock - 移除球出生或重生时的动画效果，使球无延迟瞬间出生。
+  * ShowFPS - 在游戏窗口左上角叠加显示当前 FPS。
+  * ShowSRTimer - 在游戏窗口左下角叠加显示 SR Timer（竞速计时器）。
+  * FixLifeBallFreeze - 修复加命时游戏卡死问题（Windows 10 之后常见的兼容性问题）。
+  * CustomMapNumber - 自制图关卡号。BML 加载自制图的原理是将自制图随机填入一原版关卡的位置后加载，本选项可以自定义加载入的关卡号（会影响天空背景以及通关后的奖励分）。
+    + 本选项值必须位于 1 和 13 之间。
+    + 使用 1 会导致自制图内出现帮助提示，12 导致光照变暗并配有闪电效果，13 则会导致石球开局。
+    + 填入 0 时游戏采取默认策略，将自制图随机填入第 2 至 11 关中的一关。
+  * MessageDuration - BML 提示消息的最大显示时长，以秒为单位。超时后会自动渐变隐藏。
+- Debug - 调试功能、按键等。
+  * EnableSuicideKey - 是否启用掉球自杀快捷键。由于本快捷键无需 Cheat Mode 即可使用，关闭后可以防止意外触发。
+  * SpeedNotification - 是否在启用倍速球时显示变速提示。默认状态下玩家于 Cheat Mode 下按下 `Ctrl` 即可变速，但连续变速会导致提示消息刷屏。
+- Auxiliaries - 生成调试用机关所用的按键。
+- Camera - 自定义摄像机时所用的按键等。
+  * Enable - 是否允许玩家自定义摄像机。
 
 ### AdvancedTravelCam
 
@@ -385,7 +401,12 @@ BLinguist和旧版中文补丁一致，汉化了教程和多数界面菜单。�
 迷雾模式 Mod。
 
 - 作者：Ghomist (Zzq_203)
-- 发布时间：2022 年
+- 发布时间：2022 年 4 月
+
+#### 下载地址
+
+- [地图下载站](#ballance-地图下载站)
+- [GitHub](https://github.com/Ghomist/FogMode4Ballance)
 
 #### 配置选项
 
@@ -468,7 +489,12 @@ BLinguist和旧版中文补丁一致，汉化了教程和多数界面菜单。�
 影子球干扰 Mod。可以用来训练玩家联机时的抗干扰能力。
 
 - 作者：Ghomist (Zzq_203)
-- 发布时间：2022 年
+- 发布时间：2022 年 9 月
+
+#### 下载地址
+
+- [地图下载站](#ballance-地图下载站)
+- [GitHub](https://github.com/Ghomist/BallanceInterfereMod)
 
 #### 配置选项
 
@@ -830,3 +856,35 @@ Ballance 默认摄像机的最大视野是 1200 单位，命和分的最大显�
   * ViewDistance - 摄像机视距。默认为 `1200`。
   * ExtraLifeDistance - 生命球最大显示距离。默认为 `60`。
   * ExtraPointDistance - 生命球最大显示距离。默认为 `80`。
+
+### WatchYourTime
+
+游戏时长统计器，包括总时长、关卡进入次数等。
+
+- 作者：Ghomist (Zzq_203)
+- 发布时间：2022 年 7 月
+
+#### 下载地址
+
+- [地图下载站](#ballance-地图下载站)
+- [GitHub](https://github.com/Ghomist/WatchYourTime)
+
+#### 配置选项
+
+*见游戏内配置选项。*
+
+### WindowSizeFixer
+
+Ballance 窗口大小问题修复器。
+
+原版 Ballance Player 以窗口化模式启动时，窗口会比游戏实际分辨率稍微小一点（这是由于 Ballance 使用的窗口大小计算方式不适用于新版 Windows）。如果玩家不手动对窗口大小进行调节，游戏界面右下侧会被窗口裁断一部分，无法全部显示。本 Mod 会在游戏启动时自动修复此问题。
+
+本 Mod 无需配置。
+
+- 作者：BallanceBug
+- 发布时间：2022 年 12 月
+
+#### 下载地址
+
+- [地图下载站](#ballance-地图下载站)
+- [GitHub](https://github.com/Xenapte/MyBMLMods)
