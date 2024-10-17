@@ -1,11 +1,7 @@
 from sys import argv
 
-if len(argv) < 3:
-  print("Usage: python overview_generator.py <input markdown> <output markdown>")
-  exit()
-
-input_file = argv[1]
-output_file = argv[2]
+input_file = "README.md" if len(argv) <= 1 else argv[1]
+output_file = "test_overview.md" if len(argv) <= 2 else argv[2]
 
 header_text = ""
 overview_text = ""
