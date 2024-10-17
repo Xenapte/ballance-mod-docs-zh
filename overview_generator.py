@@ -18,7 +18,7 @@ with open(input_file, "r") as f:
       content_text += line
       if line.startswith("### "):
         mod_name = line.strip()[4:]
-        overview_text += f"* [{mod_name}](#{mod_name.lower().replace(' ', '-')}): "
+        overview_text += f"- [{mod_name}](#{mod_name.lower().replace(' ', '-')}): "
         content_text += "\n[<small>**返回 Mod 列表**</small>](#mod-列表)\n"
         mod_desc_flag = True
       elif mod_desc_flag and (desc := line.strip()) and not desc.startswith("#### 基础信息") and not desc.startswith("**"):
@@ -28,7 +28,7 @@ with open(input_file, "r") as f:
       if line.startswith("## Mod 详解"):
         content_text += line
         mod_flag = True
-        overview_text += "## Mod 列表\n\n本列表仅为各 Mod 的简要介绍。**详细信息请查看各 Mod 名称上的链接所指向的位置**。\n\n"
+        overview_text += "## Mod 列表\n\n本列表仅为各 Mod 的简要介绍。**详细信息（包括下载地址等）请查看各 Mod 名称上的链接所指向的位置**。\n\n"
       else:
         header_text += line
 
