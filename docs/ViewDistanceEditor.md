@@ -9,7 +9,7 @@ Ballance 默认摄像机的最大视野是 1200 单位，命和分的最大显�
 
 ## 下载地址
 
-- [地图下载站]
+- {地图下载站}
 - [GitHub](https://github.com/Xenapte/MyBMLMods)
 
 ## 配置选项

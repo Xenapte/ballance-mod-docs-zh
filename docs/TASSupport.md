@@ -7,7 +7,7 @@ TAS 支持。本 Mod 为 BML 常见捆绑自带 Mod 之一。
 
 ## 下载地址
 
-- [地图下载站]
+- {地图下载站}
 - [GitHub](https://github.com/Gamepiaynmo/BML-Mods)
 
 ## 配置选项

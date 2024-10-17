@@ -11,7 +11,7 @@ Ballance 高清修复，为一些老旧地图添加阴影，渐变柱子等。�
 
 ## 下载地址
 
-- [地图下载站]
+- {地图下载站}
 - [GitHub](https://github.com/yyc12345/BMLMods)
 
 ## 操作方式

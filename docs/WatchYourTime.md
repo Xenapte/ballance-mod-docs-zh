@@ -7,7 +7,7 @@
 
 ## 下载地址
 
-- [地图下载站]
+- {地图下载站}
 - [GitHub](https://github.com/Ghomist/WatchYourTime)
 
 ## 配置选项

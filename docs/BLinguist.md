@@ -13,7 +13,7 @@ BLinguist和旧版中文补丁一致，汉化了教程和多数界面菜单。�
 
 ## 下载地址
 
-- [地图下载站]
+- {地图下载站}
 - [GitHub](https://github.com/yyc12345/BMLMods)
 
 ## 操作方式

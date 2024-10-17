@@ -4,7 +4,7 @@
 
 ## 下载地址
 
-- [地图下载站]
+- {地图下载站}
 - [GitHub](https://github.com/fluorescia/BallanceNewSpawn)
 
 ## 配置选项

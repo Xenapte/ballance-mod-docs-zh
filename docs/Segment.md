@@ -7,7 +7,7 @@
 
 ## 下载地址
 
-- [地图下载站]
+- {地图下载站}
 - [GitHub](https://github.com/Swung0x48/Segment)
 
 ## 配置选项

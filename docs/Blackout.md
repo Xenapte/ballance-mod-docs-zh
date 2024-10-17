@@ -7,7 +7,7 @@ Ballance 暗黑模式 Mod。可以移除游戏内的光源，让整个地图处�
 
 ## 下载地址
 
-- [地图下载站]
+- {地图下载站}
 - [GitHub](https://github.com/Xenapte/MyBMLMods)
 
 ## 配置选项

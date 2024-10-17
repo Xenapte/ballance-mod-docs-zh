@@ -24,7 +24,7 @@ python overview_generator.py
 
 - 编写文档时可从[模板目录](./templates/)复制一份模板，修改后存放至 docs 目录
 - 生成脚本自带*替换规则*
-  * 需要链接至地图下载站时可直接使用 `[地图下载站]`
+  * 需要链接至地图下载站时可直接使用 `{地图下载站}`
   * 需要链接至其它 Mod 的文档时可使用 `[ModName](./ModName.md)`
 - 本文件（即 `README.md`）的一级标题以及紧邻的段落会保留至输出
   * 其它 Overview 部分的内容已于 [overview_generator.py](./overview_generator.py#L52) 中硬编码
