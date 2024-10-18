@@ -54,7 +54,7 @@ with open("overview_header.md") as f:
   overview_text = f.read().replace("{len(docs)}", str(len(docs)))
   overview_text = overview_text[overview_text.find("\n## "):].strip() + "\n\n"
 
-docs = sorted(docs, key = lambda x: "" if x['name'] == "BallanceModLoader" else x['name'])
+docs = sorted(docs, key = lambda x: " " + x['name'] if x['name'].startswith("BallanceModLoader") else x['name'])
 for doc in docs:
   overview_text += doc['overview']
   content_text += "\n" + doc['content']

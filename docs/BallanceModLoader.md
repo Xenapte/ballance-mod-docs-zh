@@ -2,14 +2,14 @@
 
 Ballance Mod Loader（BML）的设置。游戏内 BML 以内建 Mod 的形式出现。
 
-本章节以原 BML（或称**老 BML**）的设定为准。
+本章节以原 BML（或称**老 BML**）的设定为准，BML+（或称**新 BML**）请参考 [#BallanceModLoaderPlus](./BallanceModLoaderPlus.md) 章节。
 
 ## 命令
 
 - `/bml` - 显示 BML 的相关信息。
 - `/cheat [true|false]` - 开启或关闭 Cheat Mode（作弊模式）。若不指定开关状态则会根据当前状态自动切换。
 - `/clear` - 清除当前显示的所有历史消息。
-- `/help` - 显示帮助。
+- `/help` 或 `/?` - 显示帮助。
 - `/kill` - 触发掉球自杀。
 - `/score add|sub|set <分数>` - 设置玩家的额外得分。**需要 Cheat Mode。**
 - `/sector <小节>` - 快速跳转到对应小节。**需要 Cheat Mode。**
@@ -24,6 +24,7 @@ Ballance Mod Loader（BML）的设置。游戏内 BML 以内建 Mod 的形式出
 
 **默认状态下：**
 
+- `/` - 显示命令行界面（同时可以查看历史消息）， 按 `Enter` 执行所键入命令，按 `Esc` 退出命令行。
 - `R` - 触发掉球自杀。
 
 **Cheat Mode 下：**
@@ -34,7 +35,7 @@ Ballance Mod Loader（BML）的设置。游戏内 BML 以内建 Mod 的形式出
   * `I` - 切换玩家球为纸球。
   * `O` - 切换玩家球为木球。
   * `P` - 切换玩家球为石球。
-  * `退格` - 快速重置当前小节（同时会将玩家球重置至当前出生点）。
+  * `Backspace`<small>（退格）</small> - 快速重置当前小节（同时会将玩家球重置至当前出生点）。
   * `L` - 增加一个额外生命。
   * `Ctrl` - （按住时）启用 3 倍球速。
   * `F` - （按住时）跳过本帧渲染，快进游戏。
