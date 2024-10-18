@@ -8,7 +8,7 @@ output_file = "test_overview.md" if len(argv) <= 2 else argv[2]
 # 自动替换设置（正则表达式）
 replacement = {
   r"\{地图下载站\}": r"[地图下载站](#ballance-地图下载站)",
-  r"\((\.\/)?(.+)\.md\)": lambda match: f"(#{match.group(2).lower().replace(' ', '-')})"
+  r"\((\.\/)?([^\)]+)\.md\)": lambda match: f"(#{match.group(2).lower().replace(' ', '-')})"
 }
 
 # 头部信息
@@ -31,9 +31,9 @@ for item in scandir(docs_folder):
       for line in f:
         if line.startswith("#"):
           line = "##" + line  # 标题级别 +2
-        content += line
+        content += line.replace(" - ", " – ") # 替换连字符为破折号
         if line.startswith("### "):
-          overview += f"- [{mod_name}](#{mod_name.lower().replace(' ', '-')}): "
+          overview += f"- [{mod_name}](#{mod_name.lower().replace(' ', '-')}) – "
           content += "\n[<small>**返回 Mod 列表**</small>](#mod-列表)\n"
         elif mod_desc_flag and (desc := line.strip()) and not desc.startswith("#### 基础信息") and not desc.startswith("**"):
           overview += desc + "\n"
