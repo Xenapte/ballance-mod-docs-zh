@@ -7,9 +7,11 @@
 - [在 GitHub 上查看本文档源码](https://github.com/Xenapte/ballance-mod-docs-zh)
 - [查看本文档网页版](https://bcrc.site/docs/mods)
 
-## 预览手册
+## 使用本文档
 
-拉取本仓库，然后运行 [overview_generator](./overview_generator.py) 脚本以构建完整的手册。
+本仓库已经可以作为 Mod 文档使用，不过最方便的分发方式仍然是将所有文档整合至一起，构建为 HTML 或者 PDF 手册进行分享。
+
+若要构建完整的手册，请拉取本仓库，然后运行 [overview_generator](./overview_generator.py) 脚本：
 
 ```shell
 git clone https://github.com/Xenapte/ballance-mod-docs-zh
@@ -18,6 +20,8 @@ python overview_generator.py
 ```
 
 输出文件为 `test_overview.md`。
+
+除此之外，我们自己搭建的[网页版手册](https://bcrc.site/docs/mods)还使用了一些[自定义 CSS 样式](styles/custom.css)。
 
 ## 贡献本文档
 
