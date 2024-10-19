@@ -11,15 +11,22 @@ body {
   padding: 5.208%;
   border: 1px solid #ccc;
 }
+:root {
+  --color-code-bg: #eee;
+}
 code {
   padding: 0.125em 0.25em;
-  margin: 0 0.25em;
-  background: #eee;
+  margin: 0 0.125em;
+  background: var(--color-code-bg);
   border-radius: 0.25em;
+  font: 91.25% ui-monospace, SFMono-Regular, "SF Mono", Menlo, "Noto Sans Mono", "Noto Mono", "Roboto Mono", Consolas, "Liberation Mono", monospace;
 }
-h1, h2, h3, h4, h5 {font-family: Arapey, Georgia, "Times New Roman", 华文中宋, serif}
-li {margin: 0.24em 0}
-/* p {margin: 0.48em 0.01em} */
+h1, h2, h3, h4, h5 {
+  font-family: Arapey, "Palatino Linotype", Georgia, "Times New Roman", 华文中宋, serif;
+  margin: 1.2em 0 0.6em;
+}
+p {margin: 0.64em 0}
+li, ul ul, ul ol, ol ol, ol ul {margin: 0.24em 0}
 a {text-decoration: underline dotted}
 a:hover {text-decoration: underline solid}
 .footnote-ref a {text-decoration: initial}
@@ -44,4 +51,9 @@ blockquote {
 @media print {
   a[href]::after {content: '' !important}
   a {color: #1d61ab}
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-code-bg: #212429;
+  }
 }
