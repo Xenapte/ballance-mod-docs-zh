@@ -1,6 +1,6 @@
 # Ballance Mod 文档
 
-本文档介绍适用于 [Ballance Mod Loader (简称 BML)](https://github.com/Gamepiaynmo/BallanceModLoader) 或 [Ballance Mod Loader Plus (简称 BML+ 或 BMLP)](https://github.com/doyaGu/BallanceModLoaderPlus) 的 Mod，因此你需要先安装其一才能使用。
+本文档介绍适用于 Gamepiaynmo 的 [Ballance Mod Loader (简称 BML)](https://github.com/Gamepiaynmo/BallanceModLoader) 或 doyaGu 的 [Ballance Mod Loader Plus (简称 BML+ 或 BMLP)](https://github.com/doyaGu/BallanceModLoaderPlus) 的 Mod，因此你需要先安装其一才能使用。
 
 本文档由 BallanceBug 和 yyc12345、Ghomist（Zzq_203）、doyaGu 撰写于 2024 年 10 月 7 日至 10 月 18 日。
 

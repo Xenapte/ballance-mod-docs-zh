@@ -6,7 +6,7 @@
 
 ### Ballance 地图下载站
 
-绝大多数 Mod 均可以在 [Ballance 地图下载站](http://ballancemaps.ysepan.com)下载（虽然名称是 “地图” 下载站，但实际上也可以下载到 Mod）。
+绝大多数 Mod 均可以在 [Ballance 地图下载站](http://ballancemaps.ysepan.com)下载（虽然名称是 “地图” 下载站，但实际上也可以下载到 Mod）。自然地，BML 也可以在地图下载站下载。
 
 ### 其他下载方式
 
