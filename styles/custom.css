@@ -21,11 +21,11 @@ code {
   border-radius: 0.25em;
   font: 91.25% ui-monospace, SFMono-Regular, "SF Mono", Menlo, "Noto Sans Mono", "Noto Mono", "Roboto Mono", Consolas, "Liberation Mono", monospace;
 }
-h1, h2, h3, h4, h5 {
+.markdownRoot h1, .markdownRoot h2, .markdownRoot h3, .markdownRoot h4, .markdownRoot h5 {
   font-family: Arapey, "Palatino Linotype", Georgia, "Times New Roman", 华文中宋, serif;
   margin: 1.2em 0 0.6em;
 }
-p {margin: 0.64em 0}
+p, ul, ol {margin: 0.64em 0}
 li, ul ul, ul ol, ol ol, ol ul {margin: 0.24em 0}
 a {text-decoration: underline dotted}
 a:hover {text-decoration: underline solid}
