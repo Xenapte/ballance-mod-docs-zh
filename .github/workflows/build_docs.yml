@@ -1,0 +1,39 @@
+name: Build documentations
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        sudo apt update
+        sudo apt install python3-pip
+        pip3 install 'markdown-it-py[linkify,plugins]'
+
+    - name: Prepare environment
+      run: |
+        mkdir -p build
+        echo "DOCS_NAME=mod-docs-$(git rev-parse --short ${{github.sha}})" >> "$GITHUB_ENV"
+
+    - name: Build documentation
+      run: |
+        python3 overview_generator.py ${{ env.DOCS_NAME }}.md
+        echo '<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ballance Mod 文档</title></head><body>' > ${{ env.DOCS_NAME }}.html
+        markdown-it ${{ env.DOCS_NAME }}.md >> ${{ env.DOCS_NAME }}.html
+        echo '</body></html>' >> ${{ env.DOCS_NAME }}.html
+
+    - name: Release artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ env.DOCS_NAME }}
+        path: mod-docs*
