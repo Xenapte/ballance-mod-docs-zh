@@ -34,3 +34,18 @@ jobs:
       with:
         name: ${{ env.DOCS_NAME }}
         path: mod-docs*
+    
+    - name: Checkout wiki
+      uses: actions/checkout@v4
+      with:
+        repository: ${{github.repository}}.wiki
+        path: wiki
+      
+    - name: Push to wiki
+      run: |
+        cd wiki
+        cp ../${{ env.DOCS_NAME }}.md 文档.md
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git diff-index --quiet HEAD || git commit -m "Add changes" && git push
