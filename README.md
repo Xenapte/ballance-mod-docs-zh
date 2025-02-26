@@ -5,7 +5,8 @@
 本文档由 BallanceBug 和 yyc12345、Ghomist（Zzq_203）、doyaGu 撰写于 2024 年 10 月 7 日至 10 月 21 日。
 
 - [在 GitHub 上查看本文档源码](https://github.com/Xenapte/ballance-mod-docs-zh)
-- [查看本文档网页版](https://bcrc.site/docs/mods)
+- [查看本文档 GitHub Wiki 版](https://github.com/Xenapte/ballance-mod-docs-zh/wiki/%E6%96%87%E6%A1%A3)
+- [查看本文档外部网页版](https://bcrc.site/docs/mods)（不一定及时更新）
 
 ## 使用本文档
 
