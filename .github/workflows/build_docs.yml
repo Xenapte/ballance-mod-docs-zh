@@ -19,15 +19,16 @@ jobs:
 
     - name: Prepare environment
       run: |
-        mkdir -p build
         echo "DOCS_NAME=mod-docs-$(git rev-parse --short ${{github.sha}})" >> "$GITHUB_ENV"
 
     - name: Build documentation
       run: |
         python3 overview_generator.py docs ${{ env.DOCS_NAME }}.md
-        echo '<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ballance Mod 文档</title></head><body>' > ${{ env.DOCS_NAME }}.html
+        echo '<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ballance Mod 文档</title><style>' > ${{ env.DOCS_NAME }}.html
+        cat styles/custom.css >> ${{ env.DOCS_NAME }}.html
+        echo '</style></head><body><div class="markdownRoot">' >> ${{ env.DOCS_NAME }}.html
         markdown-it ${{ env.DOCS_NAME }}.md >> ${{ env.DOCS_NAME }}.html
-        echo '</body></html>' >> ${{ env.DOCS_NAME }}.html
+        echo '</div></body></html>' >> ${{ env.DOCS_NAME }}.html
 
     - name: Release artifact
       uses: actions/upload-artifact@v4
